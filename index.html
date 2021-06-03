@@ -1,0 +1,59 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3BrLeAkntplKySc72AkrJ5qOQEw1U9lBXa0hi3izHyTHc1M8kb-vRU_2fOd9Xjp4JKFQZ46iT2dTMmZVBzRc5JUVy0CA_vGbDoR_fWKGP2zPKTG06T5OVrhb1wQZWji80QKBqt_0sMq-f4OrD3G2B8nSuyetOevZeVh5aHniSdLrlQxMb_33m_PQ4Hm3f0xCAwFNLEoknBMsqJw8vjV1ThopnVUt2v8pbrivRDAJ2pSyFizvzSEhipZNxYR2OBBsuGNkTdqgQ38yru5TrPHmyDdnMLj8XTaJ_JxNNZYbd1FBslciFUSsD5ilqbcWoG7NcMZkjG_oQatFfT3aOXQ8LZlXArSrTdLdrwWL-itsZzRUk__iN2y5ZgBJngOtWOznydbGcFjMw8Qh89dNrQ4IqlPtveseCY9gx_JByTXvSrki43wbFy6tLZAfz0ervt2os8RtFCEah6R7aYSLoun9_A" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn btn-default heading">Image Recognition</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <b class="name_of_objects">
+        Pouch
+        <hr>
+        Headphones
+        <hr>
+        Pencil Box
+        <hr>
+        Water Bottle
+        <hr>
+        Book
+        <hr>
+       </b>
+
+      <label>Webcam View - </label>
+       <div id="camera"></div>
+      <br><br>
+       <div id="result"></div>
+      <br><br>
+       <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+      <br><br>
+       <button onclick="check()" class="btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  <span id="result_object_name"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result_object_accuracy"></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
